@@ -9,12 +9,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <link rel="stylesheet" href="<?= base_url('/assets/css/global.css') ?>">
     <link rel="stylesheet" href="<?= base_url('/assets/css/loginAndRegister.css') ?>">
 
-    <title>Login</title>
+    <title>Register</title>
   </head>
   <body>
     <div class="container">
       <form action="">
-        <h1>Login</h1>
+        <h1>Register</h1>
+
+        <div class="form-group">
+          <label for="name">Nome</label>
+          <input type="text" name="name">
+        </div>
 
         <div class="form-group">
           <label for="email">Email</label>
@@ -27,11 +32,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
 
         <button type="submit">
-          Entrar
+          Registrar-se
         </button>
 
         <div class="register">
-          Ainda não é registrado? Registre-se <a href="register">aqui</a>
+          Já é registrado? Faça login <a href="login">aqui</a>
         </div>
       </form>
     </div>
